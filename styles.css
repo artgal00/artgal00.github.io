@@ -1,0 +1,101 @@
+body {background-color: #8aa35c;
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+        padding: 0; 
+        color: #050316;}
+ #wrapper {
+  background-color: #263b4a;
+  max-width: 1200px;
+  margin:0 auto;
+ }
+     
+
+header {background-color: #263b4a;
+        text-align: center;
+        color: #f9f6ec;
+        border-bottom: 4px solid #1b2730;
+        height: 100px;
+        overflow:hidden;
+        box-sizing: border-box;
+      
+}
+
+  h1{
+      line-height: 100px;
+      margin-top: 0;
+      margin-bottom: 0;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 30px;
+      
+      margin-left: auto;
+        margin-right: auto;
+        display:block;
+     }
+   .nav-container {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width:100%;
+        background-color: #9f6012;
+        border-bottom: 4px solid #1b2730;
+        padding: 10px 0;  
+      }          
+          
+.navimage {
+        display:inline-block;
+        width: 150px;
+        height: 80px;
+        line-height: 80px;
+        background-image: url(navimage.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        color:#9f6012;
+        text-align: center;
+        font-weight: bold;
+        text-decoration: none;
+        font-size: 18px;        
+        }               
+#homehero{
+      height: 600px;
+      width: 100%;
+      background-image: url(heroimage.jpg);
+      background-size: cover;
+      background-position: center;
+      background-repeat:no-repeat;
+      position:relative;
+      margin-top:20px;
+      margin-bottom:20px;
+      overflow:hidden;
+      border-radius:15px;
+}
+#hero-text{
+      color:#f9f6ec;
+      background-color:#1b2730;
+      padding:20px;
+      border-radius:10px;
+      margin-bottom:20px;
+      }
+ main {padding: 20px;
+       background-color: #9f6012;
+       min-height: 200px;
+       box-sizing: border-box;
+       }
+
+  h2 {color: #f9f6ec;
+      font-size: 24px;
+      }
+
+  p {font-size: 16px;
+     line-height: 1.5;
+     margin-bottom: 15px;
+     }
+footer {background-color: #4a6122;
+        color:#f9f6ec;
+        text-align: center;
+        padding: 10px 0;
+        font-size: 14px;
+        border-top: 4px solid #374217;
+        clear: both;
+        position: relative;
+        bottom: 0;
+        width: 100%;}   
