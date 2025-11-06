@@ -14,19 +14,19 @@ header {background-color: #263b4a;
         text-align: center;
         color: #f9f6ec;
         border-bottom: 4px solid #1b2730;
-        height: 100px;
+        min-height:100px;
+        padding: 10px 0;
         overflow:hidden;
         box-sizing: border-box;
       
 }
 
   h1{
-      line-height: 100px;
+      line-height: 1.2;
       margin-top: 0;
       margin-bottom: 0;
       font-family: Verdana, Geneva, Tahoma, sans-serif;
-      font-size: 30px;
-      
+      font-size: 1.875em;
       margin-left: auto;
         margin-right: auto;
         display:block;
@@ -53,7 +53,7 @@ header {background-color: #263b4a;
         text-align: center;
         font-weight: bold;
         text-decoration: none;
-        font-size: 18px;        
+        font-size: 1.125em;    
         }               
 #homehero{
       height: 600px;
@@ -82,10 +82,10 @@ header {background-color: #263b4a;
        }
 
   h2 {color: #f9f6ec;
-      font-size: 24px;
+      font-size: 1.5em;
       }
 
-  p {font-size: 16px;
+  p {font-size: 1em;
      line-height: 1.5;
      margin-bottom: 15px;
      }
@@ -93,9 +93,36 @@ footer {background-color: #4a6122;
         color:#f9f6ec;
         text-align: center;
         padding: 10px 0;
-        font-size: 14px;
+        font-size: .875em;
         border-top: 4px solid #374217;
         clear: both;
         position: relative;
         bottom: 0;
         width: 100%;}   
+
+        @media screen and (max-width: 768px) {
+            #homehero {
+                height: 300px;
+                margin-top:10px;
+                margin-bottom:10px;
+            }
+            header {
+                  min-height: auto  
+            }
+            h1 {
+                  font-size: 1.5em;
+                  line-height: normal;
+                  padding: 15px 10px;
+            }
+            .nav-container {
+                  flex-direction: column;
+                  padding: 5px 0; 
+            }
+            .navimage {
+                  width: 80%;
+                  margin: 5px 0;
+                  height: 50px;
+                  line-height: 50px;         
+            }
+      }
+
