@@ -2,9 +2,15 @@ body {background-color: #8aa35c;
       font-family: Arial, Helvetica, sans-serif;
       margin: 0;
         padding: 0; 
-        color: #050316;}
+        color: #050316;
+      background-image: url(restorationhero1r.jpg);
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      background-color: #8aa35c;
+}
  #wrapper {
-  background-color: #263b4a;
+  background-color: rgba(38, 59, 74, 0.8) #263b4a;
   max-width: 1200px;
   margin:0 auto;
  }
@@ -18,6 +24,10 @@ header {background-color: #263b4a;
         padding: 10px 0;
         overflow:hidden;
         box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
       
 }
 
@@ -25,6 +35,7 @@ header {background-color: #263b4a;
       line-height: 1.2;
       margin-top: 0;
       margin-bottom: 0;
+      margin:0;
       font-family: Verdana, Geneva, Tahoma, sans-serif;
       font-size: 1.875em;
       margin-left: auto;
@@ -53,8 +64,23 @@ header {background-color: #263b4a;
         text-align: center;
         font-weight: bold;
         text-decoration: none;
-        font-size: 1.125em;    
-        }               
+        font-size: 1.125em; 
+        margin:0;   
+        }    
+               #image-container{width:100%;}     
+#columns-container {display:grid; grid-template-columns: repeat(4, 1fr); gap: 20px; padding: 20px;
+}
+.column {padding: 15px;
+         border: 1px solid #050316;
+      background-color: #f9f6ec;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+ }
+ .column h2 {color:#7d4d0f;
+              border-bottom: 2px solid #b7834a;
+              padding-bottom: 5px;
+              margin-top: 0;
+            }
+               
 #homehero{
       height: 600px;
       width: 100%;
@@ -73,21 +99,96 @@ header {background-color: #263b4a;
       background-color:#1b2730;
       padding:20px;
       border-radius:10px;
-      margin-bottom:20px;
+      margin: bottom 0;
       }
- main {padding: 20px;
-       background-color: #9f6012;
+
+  
+      #restoration-image{
+            display:block;
+            height: 300px;
+            width: 100%;
+            object-fit:cover;
+            object-position:center;
+            
+            margin-top:20px;
+            margin-bottom:20px;
+            overflow:hidden;
+            border: radius 15px;
+      }
+      .float-left{float:left;
+      width:100px;
+      margin-right:10px;
+      border: 1px solid #7d4d0f 
+}
+.float-right{float:right;
+            width:120px;
+      margin-left:10px;
+      border: 1px solid #7d4d0f;
+}
+main {padding: 20px;
+       background-color: rgba(159 96 18 0.9) #9f6012;
        min-height: 200px;
        box-sizing: border-box;
        }
+ main table {
+            width:70%;
+            margin: 0 auto;
+            border-collapse: collapse;
+            color: #f9f6ec;}
+main table caption {
+      font-size:1.25em;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 0;
+      color: #f9f6ec;
+      background-color: #1b2730;
+      padding:10px 0;
+}
+main thead th {
+      background-color: #7d4d0f;
+      color: #f9f6ec;
+      padding: 12px 15px;
+      text-align: left;
+      font-weight: bold;
+      border: 1px solid #1b2730;
+      }
 
+main td { 
+      padding: 10px 15px;
+      border-bottom: 1px solid #b7834a;
+      color: #050316;
+      word-wrap: break-word;
+      max-width: 0;
+}
+
+main tbody tr:nth-child(odd) {
+      background-color: #f9f6ec;
+}
+
+main tbody tr:nth-child(even) {
+      background-color: #8aa35c;
+}
+
+main tbody tr:hover {
+      background-color: #7d4d0f;
+      color:#f9f6ec;
+      cursor: pointer;
+}
   h2 {color: #f9f6ec;
       font-size: 1.5em;
+      background-color: #1b2730;
+      margin-top: 0;
+      margin-bottom: 0;
+      padding: 15px;
       }
 
   p {font-size: 1em;
      line-height: 1.5;
+     color:#f9f6ec;
+     margin-top: 0;
      margin-bottom: 15px;
+     background-color:#1b2730;
+     padding: 15px;
      }
 footer {background-color: #4a6122;
         color:#f9f6ec;
@@ -98,8 +199,8 @@ footer {background-color: #4a6122;
         clear: both;
         position: relative;
         bottom: 0;
-        width: 100%;}   
-
+        width: 100%;
+}
         @media screen and (max-width: 768px) {
             #homehero {
                 height: 300px;
@@ -124,5 +225,12 @@ footer {background-color: #4a6122;
                   height: 50px;
                   line-height: 50px;         
             }
+            @media (max-width: 768px){
+            #columns-container { grid-template-columns: repeat(2, 1fr);
+            }
       }
-
+@media (max-width: 480px){ 
+      #columns-container{
+            grid-template-columns: 1fr;
+      }
+}
