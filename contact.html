@@ -5,12 +5,13 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>My First Webpage</title>
-    <link rel="stylesheet" href="styles.css">
-   
+    
+   <link rel="stylesheet" href="styles.css" type=>
     </head>
-    <body>
+    
+        <body class="contact-page">
     <div id="wrapper">  
-        <header>
+         <header>
        
         <h1>The McAvoy Legacy</h1>
 </header>
@@ -19,25 +20,31 @@
         <a href="index.html" class="navimage">Home</a> 
         <a href="history.html" class="navimage">History</a> &nbsp;
         <a href="restoration.html" class="navimage">Restoration</a>  &nbsp;
-        <a href="gallery.html" class="navimage">Gallery</a> &nbsp;
+        <a href="photo_gallery.html" class="navimage">Gallery</a> &nbsp;
         <a href="contact.html" class="navimage">Contact</a> &nbsp;
        </div>
 
 </nav>
 
-   <div>
-            <div id="homehero" class="hero">
-            </div>
-                <div id="hero-text">
-                    <h1>Welcome to the McAvoy Legacy</h1>
-                    <p>Discover the rich history and restoration journey of the McAvoy family home.</p>
-                </div>
-            </div>
+          <video controls poster="house_photor.jpg">
+            <source src="untilnexttime.mp4"type="video/mp4">
 
-    <main>
-        <h2>About Us</h2>
-        <p>In 2010, we made the decision to move closer to my hometown. My mom and dad had been in the process of fixing up what was my Great Grandmother's home, but with undependable workers, finances, and my dad's diagnosis of cancer, the home was unable to get the work it needed. My parents and I talked about it and several years later, I became the responsible owner. So, in the late summer of 2019 home ownership became a reality. It has been a slow process because life happens and we live six hours from the property. Both of us have jobs and the time we can devote is not quite there yet, but we are making slow, steady progress.  This home means a lot to a lot of people. It will never be like it was when grandma lived there. Nor, will it look the same as the memories of the home we have, knew, and loved. However, it will be brought back to life, its old bones will still be standing. It will be made new again, similar to how we think it may have looked in the early 1900's. The love it holds remains inside. Watch while we breathe life back into this special home.</p>
-    </main>
+
+        </video>
+       
+<h2>Contact Us-Are you a relative? Do you have information regarding this home?</h2>
+<form method="get">
+    First Name: <input type="text" name="fname" id="fname"><br><br>
+    Last Name: <input type="text" name="lname" id="lname"><br><br>
+    Phone Number: <input type="tel" name="phone" id="phone"><br><br>
+    Email: <input type="text" name="email" id="email"><br><br>
+    Comments:<br>
+    <textarea name="comments" id="comments" rows="4" cols="40"></textarea><br><br>
+    <input type="submit" value="Contact"> <input type="reset">
+</form>
+</body>
+   
+      
     
     
     <footer>
@@ -45,7 +52,7 @@
         <a href="index.html">Home</a>
         <a href="history.html">History</a>
         <a href="restoration.html">Restoration</a>
-        <a href="gallery.html">Gallery</a>
+        <a href="photo_gallery.html">Gallery</a>
         <a href="contact.html">Contact</a>
         </nav>
 
